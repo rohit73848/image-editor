@@ -10,4 +10,69 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: var(--bg-primary-color);
+  color: var(--text-primary-color);
+}
+main{
+    width: 100%;
+}
+main section{
+    width: 100%;
+    padding: var(--padding-2xl);
+}
+.btn{
+    padding: var(--padding-sm) var(--padding-md);
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius-md);
+    background-color: var(--bg-active-color);
+    cursor: pointer;
+    color: var(--text-active-color);
+}
+#reset-btn{
+    background-color: crimson;
+    color: var(--text-primary-color);
+}
+#download-btn{
+    background-color: green;
+    color: var(--text-primary-color);
+}
+main section .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gutter-lg);
+    width: 70%;
+}
+main section .top{
+    display: flex;
+    align-items: center;    
+    gap: var(--gutter-md);
+}
+main section .bottom{
+    background-color: var(--bg-secondary-color); 
+    width: 100%;
+    padding: var(--padding-2xl);
+    aspect-ratio: 5/2.7;
+    border-radius: var(--border-radius-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section .bottom .placeholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    gap: var(--gutter-sm);
+}
+main section .bottom .placeholder i{
+    font-size: 5rem;
+}
+main section .bottom .placeholder p{
+    font-size: var(--font-size-lg);
+}
+main section .right{
+    width: 30%;
 }
