@@ -19,6 +19,8 @@ main{
 main section{
     width: 100%;
     padding: var(--padding-2xl);
+    display: flex;
+    gap: var(--gutter-lg);
 }
 .btn{
     padding: var(--padding-sm) var(--padding-md);
@@ -75,4 +77,38 @@ main section .bottom .placeholder p{
 }
 main section .right{
     width: 30%;
+    background-color: var(--bg-secondary-color);
+    padding: var(--padding-lg);
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-md);
+}
+main section .right .filters{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-md);
+}
+main section .right .filter{
+    width: 100%;
+}
+main section .right .filter input{
+    width: 100%;
+    margin: var(--margin-sm);
+    outline: none;
+    appearance: none;
+}
+main section .right .filter input::-webkit-slider-runnable-track{
+    background: var(--bg-active-color);
+    height: 3px;
+    border-radius: var(--border-radius-md) !important;
+}
+main section .right .filter input::-webkit-slider-thumb{
+    cursor: pointer;
+    background-color: red;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -8.5px;
 }
